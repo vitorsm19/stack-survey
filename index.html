@@ -76,135 +76,145 @@
                         <div class="form-field">
                             <label for="tech" id="tech" class="form-label">Select the 7 technologies you like/use the
                                 most:</label>
-                           
+
                             <ul class="flex-inner">
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" value="" name="tech" class="tech-option">JavaScript
+                                        <input type="checkbox" value="" value="" name="tech"
+                                            class="tech-option">JavaScript
                                     </label>
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" value="" name="tech" class="tech-option">HTML/CSS
+                                        <input type="checkbox" value="HTML/CSS" value="" name="tech"
+                                            class="tech-option">HTML/CSS
                                     </label>
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" name="tech" class="tech-option">Python
+                                        <input type="checkbox" value="Python" name="tech" class="tech-option">Python
                                     </label>
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" name="tech" class="tech-option">Java
+                                        <input type="checkbox" value="Java" name="tech" class="tech-option">Java
                                     </label>
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" name="tech" class="tech-option">C#
+                                        <input type="checkbox" value="C#" name="tech" class="tech-option">C#
                                     </label>
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" name="tech" class="tech-option">PHP
+                                        <input type="checkbox" value="PHP" name="tech" class="tech-option">PHP
                                     </label>
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" name="tech" class="tech-option">TypeScript
+                                        <input type="checkbox" value="TypeScript" name="tech" class="tech-option">TypeScript
                                     </label>
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" name="tech" class="tech-option">Go
+                                        <input type="checkbox" value="Go" name="tech" class="tech-option">Go
                                     </label>
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" name="tech" class="tech-option">Kotlin
+                                        <input type="checkbox" value="Kotlin" name="tech" class="tech-option">Kotlin
                                     </label>
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" name="tech" class="tech-option">Ruby
+                                        <input type="checkbox" value="Ruby" name="tech" class="tech-option">Ruby
                                     </label>
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" name="tech" class="tech-option">C
+                                        <input type="checkbox" value="C" name="tech" class="tech-option">C
                                     </label>
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" name="tech" class="tech-option">Dart
+                                        <input type="checkbox" value="Dart" name="tech" class="tech-option">Dart
                                     </label>
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" name="tech" class="tech-option">Flutter
+                                        <input type="checkbox" value="Flutter" name="tech" class="tech-option">Flutter
                                     </label>
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" name="tech" class="tech-option">React
+                                        <input type="checkbox" value="React" name="tech" class="tech-option">React
                                     </label>
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" name="tech" class="tech-option">Nodejs
+                                        <input type="checkbox" value="Nodejs" name="tech" class="tech-option">Nodejs
                                     </label>
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" name="tech" class="tech-option">Angular
+                                        <input type="checkbox" value="Angular" name="tech" class="tech-option">Angular
                                     </label>
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" name="tech" class="tech-option">Vue
+                                        <input type="checkbox" value="Vue" name="tech" class="tech-option">Vue
                                     </label>
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" name="tech" class="tech-option">Nextjs
+                                        <input type="checkbox" value="Nextjs" name="tech" class="tech-option">Nextjs
                                     </label>
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" name="tech" class="tech-option">jQuery
+                                        <input type="checkbox" value="jQuery" name="tech" class="tech-option">jQuery
                                     </label>
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" name="tech" class="tech-option">Elixir
+                                        <input type="checkbox" value="Elixir" name="tech" class="tech-option">Elixir
                                     </label>
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="" name="tech" class="tech-option">Laravel
+                                        <input type="checkbox" value="Laravel" name="tech" class="tech-option">Laravel
                                     </label>
                                 </li>
 
-                              
+
                             </ul>
 
                             <div class="other">
                                 <label for="other" class="form-label">Other:</label>
-                                <input type="textarea" id="other" placeholder="Enter different technologies you like/work with...">
+                                <input type="textarea" id="other"
+                                    placeholder="Enter different technologies you like/work with...">
                             </div>
 
                         </div>
 
                         <div class="submit-field">
-                            <button id="submit" class="submit-button" value="SUBMIT">SUBMIT</button>
+                            <button onclick="javascript:validaform" id="submit" class="submit-button"
+                                value="SUBMIT">SUBMIT</button>
                         </div>
-                     
+
                     </form>
                 </div>
             </section>
         </div>
     </main>
+    <script>
+        function validaform() {
+            formok = true;
 
+            document.getElementById("")
+        }
+    </script>
 
-    </body>
+</body>
 
 </html>
