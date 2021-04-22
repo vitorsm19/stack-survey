@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stack Survey 2021</title>
+</head>
+
+<body>
+    <main id="principal">
+
+        <div class="container">
+            <header id="title">
+                <h1 class="title">Stack Survey 2021</h1>
+                <p class="description">Realized by Vitor Mesquita</p>
+            </header>
+
+            <section id="form">
+
+                <div class="form-container">
+
+                    <form id="survey-form">
+                        <div class="form-field">
+                            <label for="name" class="form-label" id="name-label">Name:</label>
+                            <input type="text" id="name" placeholder="Enter your name">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="email" class="form-label" id="email-label">Email:</label>
+                            <input type="text" id="email" placeholder="Enter your email address">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="age" class="form-label" id="number-label">Age:</label>
+                            <input type="number" id="age" placeholder="Enter your age" min="1" max="150">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="experience" class="form-label">Experience:</label>
+                            <select id="experience">
+                                <option value="" selected disabled class="default-option">Select your experience time
+                                </option>
+                                <option value="-1" id="dropdown">Less than a year</option>
+                                <option value="1-3" id="dropdown">1-3 years</option>
+                                <option value="4-7" id="dropdown">4-7 years</option>
+                                <option value="+7" id="dropdown">More than 7 years</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="area" id="area" class="form-label">In which area of ​​programming do you prefer
+                                to work?</label>
+                            <div class="stack-options">
+                                <label class="label-stack">
+                                    <input type="radio" name="stack" class="stack-option">Front-End
+                                </label>
+                                <label class="label-stack">
+                                    <input type="radio" name="stack" class="stack-option">Back-End
+                                </label>
+                                <label class="label-stack">
+                                    <input type="radio" name="stack" class="stack-option">Full-Stack
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="tech" id="tech" class="form-label">Select the 7 technologies you like/use the
+                                most:</label>
+                           
+                            <ul class="flex-inner">
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" value="" name="tech" class="tech-option">JavaScript
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" value="" name="tech" class="tech-option">HTML/CSS
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" name="tech" class="tech-option">Python
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" name="tech" class="tech-option">Java
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" name="tech" class="tech-option">C#
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" name="tech" class="tech-option">PHP
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" name="tech" class="tech-option">TypeScript
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" name="tech" class="tech-option">Go
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" name="tech" class="tech-option">Kotlin
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" name="tech" class="tech-option">Ruby
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" name="tech" class="tech-option">C
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" name="tech" class="tech-option">Dart
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" name="tech" class="tech-option">Flutter
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" name="tech" class="tech-option">React
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" name="tech" class="tech-option">Nodejs
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" name="tech" class="tech-option">Angular
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" name="tech" class="tech-option">Vue
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" name="tech" class="tech-option">Nextjs
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" name="tech" class="tech-option">jQuery
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" name="tech" class="tech-option">Elixir
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-tech">
+                                        <input type="checkbox" value="" name="tech" class="tech-option">Laravel
+                                    </label>
+                                </li>
+
+                              
+                            </ul>
+
+                            <div class="other">
+                                <label for="other" class="form-label">Other:</label>
+                                <input type="textarea" id="other" placeholder="Enter different technologies you like/work with...">
+                            </div>
+
+                        </div>
+
+                        <div class="submit-field">
+                            <button id="submit" class="submit-button" value="SUBMIT">SUBMIT</button>
+                        </div>
+                     
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    </body>
+
+</html>
