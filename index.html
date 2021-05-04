@@ -19,20 +19,21 @@
 <body>
     <main id="principal">
 
-        <div class="container testegit">
+        <div class="container">
             <header id="title">
                 <h1 class="title">Stack Survey 2021</h1>
                 <p class="description">Realized by Vitor Mesquita</p>
             </header>
 
             <section id="form">
-
+                
                 <div class="form-container">
-
+                    
                     <form id="survey-form">
                         <div class="form-field">
                             <label for="name" class="form-label" id="name-label">Name:</label>
                             <input type="text" id="name" placeholder="Enter your name">
+                            <span class="required" id="erronome">Required</span>
                         </div>
 
                         <div class="form-field">
@@ -112,7 +113,8 @@
                                 </li>
                                 <li>
                                     <label class="label-tech">
-                                        <input type="checkbox" value="TypeScript" name="tech" class="tech-option">TypeScript
+                                        <input type="checkbox" value="TypeScript" name="tech"
+                                            class="tech-option">TypeScript
                                     </label>
                                 </li>
                                 <li>
@@ -185,8 +187,6 @@
                                         <input type="checkbox" value="Laravel" name="tech" class="tech-option">Laravel
                                     </label>
                                 </li>
-
-
                             </ul>
 
                             <div class="other">
@@ -197,21 +197,39 @@
 
                         </div>
 
-                        <div class="submit-field">
-                            <button onclick="javascript:validaform" id="submit" class="submit-button"
-                                value="SUBMIT">SUBMIT</button>
+                            <button  id="submit" class="submit-button"
+                                value="SUBMIT" style="display: none;">SUBMIT</button>
+
+                     
+                        <div class="container-button">
+
+                            <div class="buttons">
+                                <a href="#" onclick="javascript:validaform()" class="btn btn-3">SUBMIT</a>
+                            </div>
+
                         </div>
+
+
 
                     </form>
                 </div>
             </section>
         </div>
     </main>
-    <script>
+    <script type="text/javascript">
         function validaform() {
             formok = true;
+            var nameInput = document.getElementById("name");
+            var emailInput = document.getElementById("email");
+            var ageInput = document.getElementById("age");
 
-            document.getElementById("")
+            if (nameInput.value == null) {
+                document.getElementById("erronome").style.display = "block";
+                formok = false;
+            } else {
+                document.getElementById("erronome").style.display = "none";
+            }
+            return formok;
         }
     </script>
 
