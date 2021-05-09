@@ -27,8 +27,8 @@
 
             <section id="form">
                 
-                <div class="form-container">
-                    
+                <div id="form-container">
+
                     <form id="survey-form">
                         <div class="form-field">
                             <label for="name" class="form-label" id="name-label">Name:</label>
@@ -191,7 +191,7 @@
 
                             <div class="other">
                                 <label for="other" class="form-label">Other:</label>
-                                <input type="textarea" id="other"
+                                <input type="textarea" id="other" rows="2"
                                     placeholder="Enter different technologies you like/work with...">
                             </div>
 
@@ -202,7 +202,7 @@
                         <div class="container-button">
 
                             <div class="buttons">
-                                <a href="#" onclick="javascript:validaform()" class="btn btn-3">SUBMIT</a>
+                                <a href="#" onclick="javascript:submitform()" class="btn btn-3">SUBMIT</a>
                             </div>
 
                         </div>
@@ -211,10 +211,18 @@
 
                     </form>
                 </div>
+
+                <div id="finish-container" style="display: none;">
+                    <img src="assets/check.svg" alt="ok" class="success-svg" /> 
+                    <h2 class="success-title">Thank you for completing the survey!</h2>
+                    <span class="success-description">We really appreciate you taking a moment to share your thoughts about it.</span>
+                    
+                </div>
             </section>
         </div>
     </main>
     <script type="text/javascript">
+    /*
         function validaform() {
             formok = true;
             var nameInput = document.getElementById("name");
@@ -228,7 +236,13 @@
                 document.getElementById("erronome").style.display = "none";
             }
             return formok;
+        }*/
+
+        function submitform(){
+            document.getElementById("form-container").style.display = "none";
+            document.getElementById("finish-container").style.display = "block";
         }
+    
     </script>
 
 </body>
