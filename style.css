@@ -17,10 +17,19 @@
 
     .container {
         max-width: 300px !important;
+        margin: 2.125rem auto 3.125rem auto !important; 
     }
     .flex-inner li {
         width: 118px !important;
         margin-bottom: 0.5em;
+    }
+
+    .title {
+        font-size: 36px !important;
+    }
+
+    .description {
+        font-size: 12px !important;
     }
 }
 
@@ -56,23 +65,24 @@ body {
     background-color: #1e6075;
     padding: 2rem;
     border-radius: 0.5rem;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .description {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .title {
-    font-size: 40px;
+    font-size: 45px;
     color: #FFFFFF;
-    text-shadow: 2px 3px 4px #474747;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 .form-label {
     margin-bottom: 0.5em;
     display: flex;
     font-weight: 700;
-    text-shadow: 1px 1.5px 2px #474747;
+    text-shadow: 0.5px 1px 2px #474747;
 }
 
 input[type=text],
