@@ -26,14 +26,14 @@
             </header>
 
             <section id="form">
-                
+
                 <div id="form-container">
 
                     <form id="survey-form">
                         <div class="form-field">
                             <label for="name" class="form-label" id="name-label">Name:</label>
                             <input type="text" id="name" placeholder="Enter your name">
-                            <span class="required" id="erronome">Required</span>
+                            <span class="required" id="erronome" style="display: none;">Required</span>
                         </div>
 
                         <div class="form-field">
@@ -197,8 +197,8 @@
 
                         </div>
 
-                         
-                     
+
+
                         <div class="container-button">
 
                             <div class="buttons">
@@ -213,36 +213,30 @@
                 </div>
 
                 <div id="finish-container" style="display: none;">
-                    <img src="assets/check.svg" alt="ok" class="success-svg" /> 
+                    <img src="assets/check.svg" alt="ok" class="success-svg" />
                     <h2 class="success-title">Thank you for completing the survey!</h2>
-                    <span class="success-description">We really appreciate you taking a moment to share your thoughts about it.</span>
-                    
+                    <span class="success-description">We really appreciate you taking a moment to share your thoughts
+                        about it.</span>
                 </div>
             </section>
         </div>
     </main>
     <script type="text/javascript">
-    /*
-        function validaform() {
-            formok = true;
-            var nameInput = document.getElementById("name");
-            var emailInput = document.getElementById("email");
-            var ageInput = document.getElementById("age");
+        function submitform() {
+            var formok = true;
+            var inputName = document.getElementById("name");
 
-            if (nameInput.value == null) {
+            if (inputName.value == "" || inputName.value == null) {
                 document.getElementById("erronome").style.display = "block";
                 formok = false;
-            } else {
-                document.getElementById("erronome").style.display = "none";
             }
-            return formok;
-        }*/
 
-        function submitform(){
+            if (formok = true) {
             document.getElementById("form-container").style.display = "none";
             document.getElementById("finish-container").style.display = "block";
+            }
+            
         }
-    
     </script>
 
 </body>

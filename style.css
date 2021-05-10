@@ -172,7 +172,6 @@ option {
 }
 
 .required{
-    display: none;
     color: rgb(255, 0, 0);
 }
 
