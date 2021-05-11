@@ -108,17 +108,15 @@ body {
 .success-svg {
     width:100%;
     height: 90px;
+    margin-top: 5px;
 }
 
 .success-title {
     color: #000;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
 }
-.success-description{
-    color: #000;
-  
-}
+
 
 input[type=text],
 select,
