@@ -33,29 +33,34 @@
                         <div class="form-field">
                             <label for="name" class="form-label" id="name-label">Name:</label>
                             <input type="text" id="name" placeholder="Enter your name">
-                            <span class="required" id="erronome" style="display: none;">Required</span>
+                            <span class="required" id="errorname" style="display: none;">Required*</span>
                         </div>
 
                         <div class="form-field">
                             <label for="email" class="form-label" id="email-label">Email:</label>
                             <input type="text" id="email" placeholder="Enter your email address">
+                            <span class="required" id="erroremail" style="display: none;">Required*</span>
+
                         </div>
 
                         <div class="form-field">
                             <label for="age" class="form-label" id="number-label">Age:</label>
                             <input type="number" id="age" placeholder="Enter your age" min="1" max="150">
+                            <span class="required" id="errorage" style="display: none;">Required*</span>
+
                         </div>
 
                         <div class="form-field">
                             <label for="experience" class="form-label">Experience:</label>
                             <select id="experience">
-                                <option value="" selected disabled class="default-option">Select your experience time
-                                </option>
-                                <option value="-1" id="dropdown">Less than a year</option>
-                                <option value="1-3" id="dropdown">1-3 years</option>
-                                <option value="4-7" id="dropdown">4-7 years</option>
-                                <option value="+7" id="dropdown">More than 7 years</option>
+                                <option value="noexp" selected id="dropdown">No experience</option>
+                                <option value="less" id="dropdown">Less than a year</option>
+                                <option value="onetothree" id="dropdown">1-3 years</option>
+                                <option value="fourtoseven" id="dropdown">4-7 years</option>
+                                <option value="more" id="dropdown">More than 7 years</option>
                             </select>
+                            <span class="required" id="errorexperience" style="display: none;">Required*</span>
+
                         </div>
 
                         <div class="form-field">
@@ -227,14 +232,27 @@
         function submitform() {
             var formok = true;
             var inputName = document.getElementById("name");
+            var inputEmail = document.getElementById("email");
+            var inputAge = document.getElementById("age");
+            var inputExperience = document.getElementById("experience");
 
             if (inputName.value == "" || inputName.value == null) {
-                document.getElementById("erronome").style.display = "block";
+                document.getElementById("errorname").style.display = "block";
+                formok = false;
+            }
+
+            if (inputEmail.value == "" || inputEmail.value == null) {
+                document.getElementById("erroremail").style.display = "block";
+                formok = false;
+            }
+
+            if (inputAge.value == "" || inputAge.value == null) {
+                document.getElementById("errorage").style.display = "block";
                 formok = false;
             }
 
             
-            if (formok = true) {
+            if (formok === true) {
             document.getElementById("form-container").style.display = "none";
             document.getElementById("finish-container").style.display = "block";
             }
