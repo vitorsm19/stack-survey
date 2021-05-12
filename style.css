@@ -70,6 +70,10 @@ body {
     margin-bottom: 30px;
 }
 
+.form-field span {
+    text-align: end;
+}
+
 #form-container {
     background-color: #1e6075;
     padding: 2rem;
